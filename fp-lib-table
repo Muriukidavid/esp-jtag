@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name RF)(type KiCad)(uri /home/muriuki/kicad_sources/mylibrary-repos/RF.pretty)(options "")(descr ""))
+  (lib (name esp-jtag)(type KiCad)(uri ${KIPRJMOD}/esp-jtag.pretty)(options "")(descr ""))
+)

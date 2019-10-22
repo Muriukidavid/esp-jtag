@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name myRF)(type Legacy)(uri /home/muriuki/kicad_sources/mylibrary-repos/myRF.lib)(options "")(descr ""))
+)
