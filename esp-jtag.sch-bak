@@ -155,19 +155,6 @@ Connection ~ 2150 7200
 Wire Wire Line
 	2150 7200 2300 7200
 $Comp
-L Regulator_Linear:AMS1117-3.3 U3
-U 1 1 5DE54B69
-P 4300 4800
-F 0 "U3" H 4300 5042 50  0000 C CNN
-F 1 "AMS1117-3.3" H 4300 4951 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4300 5000 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4400 4550 50  0001 C CNN
-F 4 "AMS1117-3.3" H 4300 4800 50  0001 C CNN "Mfr #"
-F 5 "C6186" H 4300 4800 50  0001 C CNN "LCSC #"
-	1    4300 4800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C5
 U 1 1 5DE55594
 P 3800 4950
@@ -1265,26 +1252,14 @@ Wire Wire Line
 Wire Wire Line
 	7800 800  7800 1650
 Connection ~ 7000 800 
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J2
-U 1 1 5E2C9CB5
-P 1850 5250
-F 0 "J2" H 1900 5667 50  0000 C CNN
-F 1 "JTAG" H 1900 5576 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1850 5250 50  0001 C CNN
-F 3 "~" H 1850 5250 50  0001 C CNN
-	1    1850 5250
-	1    0    0    -1  
-$EndComp
 Text GLabel 2150 5150 2    50   Input ~ 0
-FT_TCK
+ESP_TCK
 Text GLabel 2150 5350 2    50   Input ~ 0
-FT_TDI
+ESP_TDI
 Text GLabel 2150 5250 2    50   Input ~ 0
-FT_TDO
+ESP_TDO
 Text GLabel 2150 5050 2    50   Input ~ 0
-FT_TMS
-NoConn ~ 2150 5450
+ESP_TMS
 $Comp
 L power:GND #PWR0128
 U 1 1 5E2DEC88
@@ -1296,9 +1271,9 @@ F 3 "" H 1250 5450 50  0001 C CNN
 	1    1250 5450
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 5350 0    50   Input ~ 0
-FT_TxD
 Text GLabel 1650 5250 0    50   Input ~ 0
+FT_TxD
+Text GLabel 1650 5350 0    50   Input ~ 0
 FT_RxD
 Wire Wire Line
 	1250 5450 1650 5450
@@ -2085,4 +2060,62 @@ Text GLabel 7000 3050 0    50   Input ~ 0
 USB_DP
 Text GLabel 7000 2950 0    50   Input ~ 0
 USB_DM
+$Comp
+L Regulator_Linear:AMS1117-3.3 U3
+U 1 1 5DE54B69
+P 4300 4800
+F 0 "U3" H 4300 5042 50  0000 C CNN
+F 1 "AMS1117-3.3" H 4300 4951 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4300 5000 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4400 4550 50  0001 C CNN
+F 4 "AMS1117-3.3" H 4300 4800 50  0001 C CNN "Mfr #"
+F 5 "C6186" H 4300 4800 50  0001 C CNN "LCSC #"
+	1    4300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 5E2C9CB5
+P 1850 5250
+F 0 "J2" H 1900 5667 50  0000 C CNN
+F 1 "JTAG" H 1900 5576 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1850 5250 50  0001 C CNN
+F 3 "~" H 1850 5250 50  0001 C CNN
+	1    1850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 5DCEA1EC
+P 2150 5450
+F 0 "#PWR0137" H 2150 5200 50  0001 C CNN
+F 1 "GND" H 2155 5277 50  0000 C CNN
+F 2 "" H 2150 5450 50  0001 C CNN
+F 3 "" H 2150 5450 50  0001 C CNN
+	1    2150 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L myRF:karibe_logo L1
+U 1 1 5DD057EE
+P 11000 7000
+F 0 "L1" H 10887 7225 50  0001 C CNN
+F 1 "karibe_logo" H 10887 7133 50  0001 C CNN
+F 2 "" H 11000 7000 50  0001 C CNN
+F 3 "" H 11000 7000 50  0001 C CNN
+	1    11000 7000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 11100 7000
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO?
+U 1 1 5DD4DA49
+P 10300 6900
+F 0 "#LOGO?" H 10300 7175 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10300 6675 50  0001 C CNN
+F 2 "" H 10300 6900 50  0001 C CNN
+F 3 "~" H 10300 6900 50  0001 C CNN
+	1    10300 6900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
