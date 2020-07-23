@@ -1,0 +1,14 @@
+{
+    "parameterSets": {
+        "design default values": {
+            "$fa": "0.3",
+            "$fs": "0.3",
+            "allowance": "0.2",
+            "breadth": "25.4",
+            "height": "5",
+            "wallThickness": "4",
+            "width": "50.8"
+        }
+    },
+    "fileFormatVersion": "1"
+}

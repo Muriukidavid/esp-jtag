@@ -1,4 +1,4 @@
-16350467929646702
+16358148229084814
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -63896,13 +63896,6 @@ svg2mod
 6
 6
 RF
-SOIC-8_150mil
-SO-8
-SO-8
-0
-8
-8
-RF
 TestPoint_Loop_D1mm_Drill0.5mm_Beaded
 wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm
 test point wire loop bead
@@ -72996,19 +72989,12 @@ varistor SIOV
 2
 2
 artwork
-LTS25-NP
-
-
-0
-9
-9
-artwork
 karibe_logo
 
 
 0
-1
-1
+3
+2
 connectors
 DHT22
 
@@ -73065,10 +73051,59 @@ usb-PCB
 0
 4
 4
-esp-jtag
-VQFN-14_3.6x3.6x05P
+power_ICs
+BarrelJack_Horizontal_2mm
+DC Barrel Jack
+Power Jack
+0
+3
+3
+power_ICs
+CR75NP-2R2MC
 
 
 0
-15
-15
+2
+2
+power_ICs
+Inductor_7*7*4
+
+
+0
+2
+2
+power_ICs
+MIC2076-1BM_SOIC127P798X216-8N
+
+
+0
+8
+8
+power_ICs
+MSOP-8-1EP_6.2x5mm_Pitch1.27mm
+MS8E Package; 8-Lead Plastic MSOP, Exposed Die Pad (see Linear Technology 05081662_K_MS8E.pdf)
+SSOP 0.65
+0
+9
+9
+power_ICs
+MT3608
+
+
+0
+6
+6
+power_ICs
+SOIC127P798X216-8N
+
+
+0
+8
+8
+power_ICs
+USB3_A_Molex_48391-001
+USB 3.0, type A, right angle (http://www.molex.com/pdm_docs/sd/483930003_sd.pdf)
+USB 3.0 type A right angle
+0
+13
+10

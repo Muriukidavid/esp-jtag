@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:esp-jtag-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -266,7 +265,7 @@ F 3 "" H 5000 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_USB:FT2232H U5
+L esp-jtag-rescue:FT2232H-Interface_USB U5
 U 1 1 5DE5FE96
 P 8200 3850
 F 0 "U5" H 9100 5950 50  0000 C CNN
@@ -2096,18 +2095,6 @@ F 3 "" H 2150 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L myRF:karibe_logo L1
-U 1 1 5DD057EE
-P 11000 7000
-F 0 "L1" H 10887 7225 50  0001 C CNN
-F 1 "karibe_logo" H 10887 7133 50  0001 C CNN
-F 2 "artwork:karibe_logo" H 11000 7000 50  0001 C CNN
-F 3 "" H 11000 7000 50  0001 C CNN
-	1    11000 7000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 11100 7000
-$Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 5DD4DA49
 P 10300 6900
@@ -2118,4 +2105,17 @@ F 3 "~" H 10300 6900 50  0001 C CNN
 	1    10300 6900
 	1    0    0    -1  
 $EndComp
+$Comp
+L myRF:karibe_logo L1
+U 1 1 5DC86638
+P 11145 7275
+F 0 "L1" H 11095 7175 50  0001 C CNN
+F 1 "karibe_logo" H 11145 7375 50  0001 C CNN
+F 2 "artwork:karibe_logo" H 11145 7275 50  0001 C CNN
+F 3 "" H 11145 7275 50  0001 C CNN
+	1    11145 7275
+	1    0    0    -1  
+$EndComp
+Text Notes 12105 2005 0    50   ~ 0
+TODO:\nAdd 5V torelance using a jumper to choose between VDD and VCC voltages\nGenerate gerber files for manufacturing PCBs
 $EndSCHEMATC

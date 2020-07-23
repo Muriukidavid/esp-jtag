@@ -11,7 +11,7 @@ The goal of this repo is to enable customization by adding or removing features.
 * Autoprogram using RTS and DTS signals
 
 ### TODO
-* <s>Layout the PCB and route<s>
+* <s>Layout the PCB and route</s>
 - <s>Add LCSC.com BOM column</s> 
 * Add digikey BOM column
 <br/>
@@ -22,7 +22,7 @@ The goal of this repo is to enable customization by adding or removing features.
 
 ### Board 3D Top View 
 
-A preview of the ongoing PCB layout design
+A preview of the on-going PCB layout design
 ![Board top copper](images/esp-jtag_F_CU.png)
 
 3D TOP view 
@@ -30,6 +30,7 @@ A preview of the ongoing PCB layout design
 
 3D ISO view 
 ![ISO 3D view PCB layout](images/esp-jtag.png)
+![ISO 3D view PCB layout](images/esp-jtag2.png)
 
 ### BOM
 <a href="bom/ibom.html" rel="BOM">![BOM](images/bom.png)
